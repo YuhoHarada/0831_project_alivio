@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+:root{
+    --color1: #01996D;
+    --color2: #292929;
+    --color3: #424242;
+    --color4: #245852;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    color: var(--color3);
+}
+
+/* ********************* ALL ********************* */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    line-height: 1.5em;
+}
+/* *********** header *********** */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10vw;
+    color: var(--color2);
+    border-bottom: 1px solid var(--color3);
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin-left: 3vw;
+}
+/* *********** footer *********** */
+footer{
+    background: var(--color4);
+    padding: 100px 10vw;
+    color: #fff;
+}
+footer ul{
+    list-style: none;
+}
+footer li{
+    margin: 20px 0;
+}
+
+
+/* ********************* repeat ********************* */
+.btn{
+    background: var(--color1);
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 4px;
+}
+#hero{
+    background: url("Hero.png") center/cover no-repeat;
+    padding: 100px 10vw 200px;
+}
+#hero h1{
+    color: var(--color1);
+    max-width: 400px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+#hero p{
+    max-width: 400px;
+    margin-bottom: 80px;
+}
+
+
+/* ********************* index ********************* */
+#index #works{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 100px;
+    padding: 100px 10vw;
+}
+#index #works h2{
+    grid-column: span 2;
+    font-size: 1em;
+}
+#index #works h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    color: var(--color1);
+    line-height: 1.5em;
+}
+
+#index #works_bild{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 0 10vw 100px;
+}
+#index #works_bild h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: var(--color1);
+    opacity: 0.2;
+    font-size: 8em;
+}
+#index #works_bild h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: translate(70px, -50px);
+    color: #000;
+}
+#index #works_bild p{
+    margin-bottom: 50px;
+}
+#index #works_bild img{
+    width: 100%;
+}
+#index #works_bild article:nth-of-type(2){
+    margin-top: 200px;
+}
+#index #works_bild article:nth-of-type(3){
+    margin-top: 50px;
+}
+
+
+/* ********************* solutions ********************* */
+#solutions #video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 10vw;
+}
+#solutions #video img{
+    width: 50vw;
+}
+
+
+/* ********************* community ********************* */
+#community #product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 100px 10vw 200px 15vw;
+    position: relative;
+}
+#community #product img:not(.card){
+    width: 100%;
+}
+#community #product .card{
+    position: absolute;
+    left: 10vw;
+    bottom: 100px;
+    width: 300px;
+}
+#community #product div h2{
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+#community #product div h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--color1);
+    font-size: 2.5em;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}
+#community #product div p{
+    margin-bottom: 30px;
+    max-width: 80%;
+}
+
+/* ********************* 404 ********************* */
+#page404 section img{
+    display: block;
+    width: 600px;
+    margin: 200px auto;
+}
